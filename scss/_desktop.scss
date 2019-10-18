@@ -1,0 +1,14 @@
+// Large devices (desktops 992px and up)
+@media (min-width: 992px) {
+  .main-nav-outer {
+    width: initial;
+    height: initial;
+    background: initial;
+    position: initial;
+    border: none;
+  }
+
+  .nav-icons .dropdown-menu {
+    margin-left: -240px;
+  }
+}

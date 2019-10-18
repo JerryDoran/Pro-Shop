@@ -1,25 +1,9 @@
 @import 'config';
 
-/*** HEADER ***/
+/*** HEADER NAVBAR ***/
 .custom-nav-container {
   position: relative;
   z-index: 1;
-
-  .main-nav-outer {
-    width: 250px;
-    height: 100vh;
-    background-color: $main-white;
-    position: fixed;
-    top: 0;
-    // right: -250px;
-    border-left: 5px solid $main-gray;
-    z-index: 1000;
-    transition: all 650ms ease;
-
-    &.open-menu {
-      right: 0;
-    }
-  }
 
   .menu-close-icon {
     position: absolute;
@@ -40,5 +24,86 @@
   i {
     font-size: 20px;
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .navbar-brand {
+    i {
+      font-size: 30px;
+
+      span {
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .nav-icons > a {
+    position: relative;
+
+    > .badge {
+      color: $main-white;
+      position: absolute;
+      top: -10px;
+      right: -16px;
+      background: $main-black;
+      border-radius: 100%;
+    }
+  }
+
+  .nav-icons .dropdown-menu {
+    margin-top: 40px;
+    margin-left: -225px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      right: 50px;
+      width: 20px;
+      height: 20px;
+      background-color: inherit;
+      border: inherit;
+      transform: rotate(45deg);
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+    }
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  .dropdown-item {
+    color: $main-gray;
+    font-size: 14px;
   }
 }
+
+.main-nav-outer {
+  width: 250px;
+  height: 100vh;
+  background-color: $main-white;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  border-left: 5px solid $main-gray;
+  z-index: 1000;
+  transition: all 650ms ease;
+
+  &.open-menu {
+    right: 0;
+  }
+}
+
+.form-group input {
+  margin-bottom: 15px;
+}
+
+@import 'desktop';
