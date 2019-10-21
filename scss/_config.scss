@@ -29,6 +29,15 @@ a {
   }
 }
 
+section {
+  padding: 50px;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -54,7 +63,7 @@ ul {
 
 .text-clipped {
   padding: 1px;
-  // background: linear-gradient(to bottom, $gradient-from, $gradient-to);
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
+  background: $main-black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

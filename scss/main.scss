@@ -106,4 +106,69 @@
   margin-bottom: 15px;
 }
 
+/*** PROMOTIONS SECTION ***/
+.promotions {
+  background-color: $main-black;
+  font-size: 14px;
+}
+
+/*** CAROUSEL SECTION ***/
+
+.carousel {
+  z-index: 0;
+}
+.carousel-inner {
+  img {
+    color: black;
+  }
+  .img-fluid {
+    width: 100%;
+  }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  // background-color: $main-white;
+  opacity: 1;
+}
+
+// .carousel-control-prev {
+//   border-top-right-radius: 100%;
+//   border-bottom-right-radius: 100%;
+// }
+
+// .carousel-control-next {
+//   border-top-left-radius: 100%;
+//   border-bottom-left-radius: 100%;
+// }
+
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 1.5rem;
+  background-color: $main-white;
+  opacity: 1;
+}
+
+/*** BRANDS SECTION ***/
+.featured-brands img {
+  max-width: 100px;
+  max-height: 100px;
+  opacity: 0.7;
+  transition: opacity 650ms ease-in;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+/*** WOMEN'S SECTION ***/
+.hero-img {
+  padding: 50px;
+  margin: auto;
+}
+
 @import 'desktop';
