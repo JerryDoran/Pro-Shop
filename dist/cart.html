@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/6f92449565.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- MAIN STYLE SHEET USING SASS-->
+    <link rel="stylesheet" href="css/main.min.css" />
+
+    <title>The Pro Shop</title>
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <div
+        class="custom-nav-container d-flex align-items-center justify-content-between px-2 py-3 shadow-sm"
+      >
+        <a href="#" class="text-clipped navbar-brand">
+          <i class="fa fa-golf-ball d-flex">
+            <span class="ml-2 mt-auto mb-auto">Pro Shop</span>
+          </i>
+        </a>
+        <div class="main-nav-outer d-flex">
+          <i class="fa fa-times text-clipped menu-close-icon d-lg-none"></i>
+          <nav
+            class="main-nav navbar navbar-light navbar-expand-lg text-center m-auto"
+          >
+            <ul class="navbar-nav d-flex">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kids</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">New Arrivals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sale</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- ICONS ON THE RIGHT SIDE OF THE NAV BAR -->
+        <div class="nav-icons-container d-flex justify-content-between">
+            
+          <div class="nav-icons">
+            <a href="#" >
+              <i class="fas fa-search text-clipped"></i>
+            </a>
+          </div>
+          <div class="nav-icons">
+            <a href="#">
+              <i class="fas fa-shopping-bag bag-item-count text-clipped"></i>
+              <span class="badge">2</span>
+            </a>
+          </div>
+          <div class="nav-icons">
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                <i class="fas fa-user text-clipped"></i>
+              </a>
+              <div class="dropdown-menu">
+                <form class="p-2 text-secondary" action="">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Enter email"
+                      required
+                    />
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      placeholder="Enter password"
+                      required
+                    />
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdown-checkbox">
+                    <label for="dropdown-checkbox" class="form-check-label">Remember me</label>
+                  </div>
+                  <button type="submit" class="btn btn-bg my-2">Login</button>
+                </form>
+                <div class="dropdown-divider mt-0"></div>
+                <a href="#" class="dropdown-item">Don't have an account? Sign up</a>
+                <a href="#" class="dropdown-item">Forgot your password? Reset now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-icons d-lg-none">
+            <a href="#">
+              <i class="fas fa-bars open-menu-icon text-clipped"></i>
+            </a>
+          </div>
+      </div>
+    </header>
+
+    <!-- PROMOTIONS SECTION -->
+    <div class="promotions text-center py-2 mb-5 text-white">
+      <span>
+        <span class="text-uppercase font-weight-bold">Free Shipping</span> on orders of $100 or more!
+      </span>
+    </div>
+ 
+
+  <!-- CART SECTION -->
+  <section class="my-cart p-0">
+    <div class="heading-has-bg d-flex">
+        <div class="container text-left align-self-center">
+          <h1 class="text-uppercase">Cart</h1>
+        </div>
+    </div>
+
+    <!-- CART ITEMS -->
+    <div class="container py-5">
+
+      <!-- SINGLE CART ITEM -->
+      <div class="cart-item-container d-md-flex justify-content-between py-3 mb-5">
+        <span class="remove-cart-item bg-danger d-flex">
+          <i class="fas fa-times m-auto text-white"></i>
+        </span>
+        <div class="px-3 my-3 text-center text-md-left">
+          <a href="#">
+            <div class="cart-item-img mx-auto mx-md-0 mb-3">
+                <img class="img-fluid mt-5 mb-3" src="/dist/images/equipment/footjoy-1.jpg" alt="">
+            </div>
+            <div class="cart-item-product-info">
+              <h5 class="text-uppercase">Foot Joy Uptempo 720</h5>
+              <span><strong>Size:</strong> 9.5</span>
+              <span><strong>Color:</strong> Black</span>
+            </div>
+          </a>
+        </div>
+        <div class="px-3 my-3 text-center">
+          <div class="cart-item-label text-uppercase text-secondary font-weight-bold">
+            Quantity
+          </div>
+          <div class="d-inline-block">
+            <select class="form-control" name="" id="">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <address>
+              <strong class="h3 font-weight-normal">The Pro Shop</strong><br>
+              12345 Main Street <br>
+              Cupertino, CA 11111 <br>
+              Phone: (231)555-9999
+            </address>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+              <div class="footer-title">
+                <h5>Our Links</h5>
+                <span class="custom-border"></span>
+              </div>
+              <ul class="footer-list">
+                <li><a href="#" class="footer-link"></a>Our Products</li>
+                <li><a href="#" class="footer-link"></a>Locations</li>
+                <li><a href="#" class="footer-link"></a>Golf News</li>
+                <li><a href="#" class="footer-link"></a>Our Mission</li>
+                <li><a href="#" class="footer-link"></a>Sponsored Events</li>
+              </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+              <div class="footer-title">
+                <h5>Customer Service</h5>
+                <span class="custom-border"></span>
+              </div>
+              <ul class="footer-list">
+                <li><a href="#" class="footer-link"></a>Our Products</li>
+                <li><a href="#" class="footer-link"></a>Contact</li>
+                <li><a href="#" class="footer-link"></a>Golf News</li>
+                <li><a href="#" class="footer-link"></a>Our Mission</li>
+                <li><a href="#" class="footer-link"></a>Sponsored Events</li>
+              </ul>
+          </div>
+          <hr class="mt-5">
+          <div class="w-100 d-md-flex justify-content-between align-items-center text-center text-md-right">
+            <div class="order-2">
+              <a href="#" class="footer-link">lorem</a>
+              <a href="#" class="footer-link ml-3">lorem</a>
+              <a href="#" class="footer-link ml-3">lorem</a>
+            </div>
+            <div>
+                 <p class="m-0 text-sm order-1">
+              &copy; 2019 The Pro Shop.  All rights reserved.
+            </p>
+            </div>         
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- BOOTSTRAP SCRIPTS-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JQUERY CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CUSTOM JAVASCRIPTS-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
